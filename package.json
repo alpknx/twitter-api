@@ -1,20 +1,28 @@
 {
-  "name": "instagram-api",
+  "name": "twitter-api",
   "private": true,
-  "version": "0.1.0",
-  "description": "A Strapi application",
+  "version": "0.0.1",
+  "description": "Twitter backend sample",
   "scripts": {
     "develop": "strapi develop",
     "start": "strapi start",
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jest": "^28.1.2",
+    "supertest": "^6.2.4"
+  },
   "dependencies": {
-    "@strapi/strapi": "4.2.2",
-    "@strapi/plugin-users-permissions": "4.2.2",
     "@strapi/plugin-i18n": "4.2.2",
-    "better-sqlite3": "7.4.6"
+    "@strapi/plugin-users-permissions": "4.2.2",
+    "@strapi/strapi": "4.2.2",
+    "axios": "^0.27.2",
+    "better-sqlite3": "7.4.6",
+    "lodash": "^4.17.21",
+    "pg": "^8.7.3",
+    "qs": "^6.11.0",
+    "yup": "^0.32.11"
   },
   "author": {
     "name": "A Strapi developer"
@@ -23,7 +31,7 @@
     "uuid": "2647dc78-41fa-41a1-b658-637e73e15931"
   },
   "engines": {
-    "node": ">=12.x.x <=16.x.x",
+    "node": ">=14.19.1 <=16.x.x",
     "npm": ">=6.0.0"
   },
   "license": "MIT"
